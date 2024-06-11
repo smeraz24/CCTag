@@ -61,7 +61,7 @@ bool orazioDistanceRobust(
 
   using MapT = std::map<float, MarkerID>;
 
-  if ( cuts.size() == 0 )
+  if ( cuts.empty() )
   {
     return false;
   }
@@ -1262,7 +1262,7 @@ int identify_step_1(
   )
 #endif
 
-  if ( cuts.size() == 0 )
+  if ( cuts.empty() )
   {
     // Can happen when an object or the image frame is occluding a part of all available cuts.
     return status::no_collected_cuts;
@@ -1288,7 +1288,7 @@ int identify_step_1(
     const float spendTime = d.total_milliseconds();
   }
 
-  if ( vSelectedCuts.size() == 0 )
+  if ( vSelectedCuts.empty() )
   {
     CCTAG_COUT_DEBUG("Unable to select any cut.");
     return status::no_selected_cuts; // todo: is class attributes the best option?
