@@ -26,6 +26,7 @@
 #include <boost/accumulators/statistics/median.hpp>
 #include <boost/accumulators/statistics/variance.hpp>
 #include <boost/assert.hpp>
+#include <boost/foreach.hpp>
 
 #include <cmath>
 #include <mutex>
