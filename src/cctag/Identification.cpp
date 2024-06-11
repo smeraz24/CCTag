@@ -571,9 +571,7 @@ void selectCutCheapUniform( std::vector< cctag::ImageCut > & vSelectedCuts,
   
   vSelectedCuts.clear();
   vSelectedCuts.reserve(selectSize);
-  
-  std::size_t sharpSize = 0;
-  
+
   // Initialize vector of indices of sharp cuts
   std::vector<std::size_t> indToAdd;
   indToAdd.reserve(varCuts.size());
