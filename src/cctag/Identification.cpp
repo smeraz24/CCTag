@@ -703,8 +703,9 @@ std::pair<float,float> convImageCut(const std::vector<float> & kernel, ImageCut 
   float itsLocation = (float) std::distance(output.begin(), maxValueIt);
   
   //CCTAG_COUT_VAR2(*maxValueIt, itsLocation);
-  
-  return std::pair<float,float>(*maxValueIt,itsLocation);// max value, its location
+
+  // max value, its location
+  return {*maxValueIt, itsLocation};
 }
 
 /**
