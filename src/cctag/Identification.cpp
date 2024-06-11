@@ -699,7 +699,7 @@ std::pair<float,float> convImageCut(const std::vector<float> & kernel, ImageCut 
   //cut.imgSignal() = output;
   
   // Locate the maximum value.
-  std::vector<float>::iterator maxValueIt = std::max_element(output.begin(), output.end());
+  auto maxValueIt = std::max_element(output.begin(), output.end());
   float itsLocation = (float) std::distance(output.begin(), maxValueIt);
   
   //CCTAG_COUT_VAR2(*maxValueIt, itsLocation);
